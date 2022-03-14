@@ -27,7 +27,7 @@ public class OrderService {
         OrderEvent event = new OrderEvent();
         event.setGoodsList(goodsList);
         // 发送库存扣减信息
-        mqTemplate.send("Order_topic", MessageBuilder.withPayload(event).build());
+        mqTemplate.send("Order_topic:tag3", MessageBuilder.withPayload(event).build());
         log.info("消息发送完成，订单创建完成");
 
     }

@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Service
-@RocketMQMessageListener(consumerGroup = "my-group", topic = "Order_topic")
+@RocketMQMessageListener(consumerGroup = "my-group", topic = "Order_topic", selectorExpression = "tag2")
 public class OrderEventService implements RocketMQListener<OrderEvent> {
 
     @Override

@@ -36,6 +36,7 @@
     <module>user</module>
     <module>order</module>
     <module>goods</module>
+    <module>cloud_stream</module>
 
   </modules>
 
