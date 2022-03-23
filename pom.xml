@@ -37,6 +37,7 @@
     <module>order</module>
     <module>goods</module>
     <module>cloud_stream</module>
+    <module>api</module>
 
   </modules>
 
@@ -66,6 +67,11 @@
 
         <version>${revision}</version>
 
+      </dependency>
+      <dependency>
+        <groupId>com.sample</groupId>
+        <artifactId>api</artifactId>
+        <version>${revision}</version>
       </dependency>
 
       <dependency>
